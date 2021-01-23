@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --blue: #003366;
+    --yellow: #ffcc00;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+#navbar ul a.current{
+    color: var(--yellow);
+}
+.btn{
+    display: inline-block;
+    background: var(--blue);
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.btn:hover{
+    color: var(--yellow);
+}
+.p-1{
+    padding: 1rem 0;
+}
+.p-2{
+    padding: 2rem 0;
+}
+.p-3{
+    padding: 3rem 0;
+}
+.py{
+    padding: 8rem 0;
+}
+.l-heading{
+    font-size: 3rem;
+}
+.p-heading{
+    font-size: 1.25rem;
+}
+.h-medium{
+    font-size: 2rem;
+}
+nav{
+    background: var(--blue) center center/cover;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a
+{
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 2rem;
+    color: #fff;
+}
+#navbar h2 a
+{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+#navbar ul li a:hover,
+#navbar h2 a:hover{
+    color: var(--yellow);
+}
+#showcase{
+    background: url("../images/operation_rahat.jpg") center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+#showcase .showcase-info{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#showcase .showcase-info h1{
+    color: var(--yellow);
+    font-size: 3rem;
+    line-height: 1.4;
+}
+#showcase .showcase-info p{
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+#info .container .info-header{
+    text-align: center;
+    padding: 8rem;
+}
+#info .container .info-header h2{
+    font-size: 3rem;
+    line-height: 1.4;
+}
+#info .container .info-header p{
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+#info .container .info-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    grid-row-gap: 3rem;
+    background-color: #E5E5E5;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+#info .container .info-grid .info-title img[src="./images/equality.png"],
+#info .container .info-grid .info-title img[src="./images/group-and-arrow.png"],
+#info .container .info-grid .info-title img[src="./images/growth.png"],
+#info .container .info-grid .info-title img[src="./images/job-search.png"]{
+    width: 15%;
+}
+#genesis{
+    display: flex;
+    flex-direction: row;
+}
+#genesis .genesis-info{
+    height: auto;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+}
+#genesis img{
+    border-radius: 1rem;
+}
+#strategies .strategies-title{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#strategies .strategies-flex{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#strategies .strategies-flex .heading-1{
+    padding: 1.5rem;
+    background: #E5E5E5;
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+#strategies .strategies-flex .heading-1:hover{
+    width: 450px;
+    height: 300px;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+#team .introduction{
+    text-align: center;
+}
+#team .team-profiles{
+    /* height: auto; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+}
+#team .team-profiles .person{
+    flex: 1;
+}
+#programs .program-intro{
+    text-align: center;
+}
+#programs .program-info{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+#upper{
+    background: #333 center center/cover;
+    color: #fff;
+    margin-top: 8rem;
+}
+#upper .columns{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#upper .columns .column-1{
+    flex: 2;
+    padding: 0 3rem;
+}
+#upper .columns .column-2, #upper .columns .column-3{
+    flex: 1;
+}
+#upper .columns .column-2 li, #upper .columns .column-3 ul li{
+    list-style: none;
+    padding: 0.5rem 0;
+}
+#upper .columns .column-3 h4{
+    padding: 0.5rem 0;
+}
+#upper .columns .column-2 ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#upper .columns .column-1 h2, #upper .columns .column-2 h3, #upper .columns .column-3 h3{
+    padding-bottom: 2rem;
+}
+#lower{
+    background: var(--blue) center center/cover;
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+}
+#mvgo{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#contact-form .form-group{
+    margin-bottom: 20px;
+}
+#contact-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+#contact-form input,
+#contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+#contact-form textarea{
+    height: 200px;
+}
+#contact-form input:focus,
+#contact-form textarea:focus{
+    outline: none;
+    border-color: var(--yellow);
+}
